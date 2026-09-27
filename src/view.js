@@ -34,6 +34,7 @@ function owStatusText() {
   return lines.join('\n');
 }
 
+owArmAutoCheck(); // 開くたびに自動実行の予約を作り直す（予約が消えていても、ここで直る）
 const recent = owLoadRecent();
 const options = { status: '📋 動いているか確認する' };
 recent.slice(0, 40).forEach((r, i) => {

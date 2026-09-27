@@ -7,6 +7,7 @@ try {
   result = 'エラー: ' + e;
 }
 const state = owLoadState();
+owArmAutoCheck(); // 確認は済んでいるので、自動チェックは予約を作り直してすぐ終わる
 showDialog(
   (result || '結果なし').replace(/\n/g, '<br>') +
     '<br><br><small>最終確認: ' + (state.last_run_at ? owYmd(state.last_run_at) + ' ' + owHm(state.last_run_at) : '—') + '</small>',

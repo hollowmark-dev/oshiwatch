@@ -44,9 +44,12 @@ if (first.result === 'button1' || first.result === 'button2') {
     selected = selected.slice(0, OW.MAX_CHARACTERS);
   }
   owSave('ow_selected', selected);
+  // 選んだ直後に自動チェックを起動する。新しいキャラの「いまある商品」の登録がすぐ済み、
+  // 以後6時間ごとの自動実行も予約される（取り込んだだけでは予約されないため）。
+  owArmAutoCheck();
   showDialog(
     '通知するキャラ:<br>' + (selected.length ? selected.map((c) => '・' + c.name).join('<br>') : '（なし）') +
-      '<br><br>新しく選んだキャラは、次の確認で「いまある商品」を登録します（このときは通知しません）。そのあと新しく出た商品から通知します。',
+      '<br><br>新しく選んだキャラは、このあと裏で「いまある商品」を登録します（このときは通知しません）。そのあと新しく出た商品から通知します。<br><br>以後は6時間ごとに自動で確認します。',
     '保存しました',
   );
 }

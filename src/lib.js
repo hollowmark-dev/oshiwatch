@@ -386,14 +386,45 @@ function owLoadConfig(session) {
   return { ok: false, error: '設定ファイルを取得できません' };
 }
 
-// ---------- 通知（同じ内容を何度も出さない） ----------
+// ---------- 自動チェックの予約 ----------
+// HTTP Shortcuts は「そのショートカットが1回実行されたとき」に次回の繰り返しを予約する作り。
+// 取り込んだだけでは予約されないので、購入者が何かのショートカットを使うたびに、
+// 裏で自動チェックを1回起動して予約を作り直させる（予約が消えても次に触れば直る）。
+// 自動チェックは「きょう確認済み」「前回から1時間以内」なら即座に終わるので、余計なアクセスは増えない。
+function owArmAutoCheck() {
+  try {
+    enqueueShortcut('自動チェック');
+  } catch (e) {
+    logEvent('自動チェックの予約に失敗', String(e));
+  }
+}
+
+// ---------- 通知 ----------
+// スクリプトの通知は HTTP Shortcuts の「ショートカット実行」チャンネル（重要度: 低＝音もバイブも無し）に入る。
+// このチャンネルは6時間ごとの実行中表示にも使われるので、購入者に音をオンにしてもらうと毎回鳴ってしまう。
+// そこで、新商品や警告があったときだけ、スクリプトから音とバイブを鳴らす。
+function owAlert() {
+  try {
+    playSound();
+  } catch (e) {
+    // 音が出せなくても通知自体は出ている
+  }
+  try {
+    vibrate();
+  } catch (e) {
+    // バイブが無い端末もある
+  }
+}
+
+// 同じ内容を何度も出さない
 
 function owNotifyOnce(state, key, everyDays, title, message) {
   const today = owYmd();
   const last = state.notices[key];
-  if (last && owDaysBetween(last, today) < everyDays) return;
+  if (last && owDaysBetween(last, today) < everyDays) return false;
   state.notices[key] = today;
   showNotification(title, message);
+  return true;
 }
 
 // ---------- チェック本体 ----------
@@ -447,6 +478,7 @@ function owRunCheck(force) {
   let allOk = true;
   let newCount = 0;
   let checkedEstablished = false; // 初回登録ではない（以前から監視していた）組み合わせを確認できたか
+  let needAlert = false; // 新商品・警告があったときだけ音とバイブで知らせる
   const siteBlocked = {};
 
   selected.slice(0, OW.MAX_CHARACTERS).forEach((ch) => {
@@ -468,7 +500,9 @@ function owRunCheck(force) {
         siteBlocked[siteKey] = true;
         allOk = false;
         if (robots.blocked) {
-          owNotifyOnce(state, 'robots_' + siteKey, 7, OW_SITES[siteKey].label + ' の確認を止めています', 'サイト側の robots.txt で禁止されたため。更新をお待ちください');
+          if (owNotifyOnce(state, 'robots_' + siteKey, 7, OW_SITES[siteKey].label + ' の確認を止めています', 'サイト側の robots.txt で禁止されたため。更新をお待ちください')) {
+            needAlert = true;
+          }
         }
         summary.push('⚠️ ' + label + ': ' + robots.error);
         return;
@@ -483,7 +517,9 @@ function owRunCheck(force) {
           t.fail_last = today;
         }
         if (t.fail_days >= OW.FAIL_NOTIFY_DAYS) {
-          owNotifyOnce(state, 'fail_' + tkey, 7, '⚠️ ' + label + ' を確認できていません', t.fail_days + '日連続: ' + res.error);
+          if (owNotifyOnce(state, 'fail_' + tkey, 7, '⚠️ ' + label + ' を確認できていません', t.fail_days + '日連続: ' + res.error)) {
+            needAlert = true;
+          }
         }
         summary.push('❌ ' + label + ': ' + res.error);
         return;
@@ -510,6 +546,7 @@ function owRunCheck(force) {
             t.seen[it.id] = today;
           });
           showNotification('⚠️ ' + label + ': 新商品が ' + fresh.length + ' 件', 'いつもと違うので個別の通知は控えました。サイトで直接確認してください');
+          needAlert = true;
           summary.push('⚠️ ' + label + ': 一度に ' + fresh.length + ' 件（要確認）');
         } else {
           fresh.forEach((it) => {
@@ -520,6 +557,7 @@ function owRunCheck(force) {
             }
             t.seen[it.id] = today;
             newCount++;
+            needAlert = true;
             let msg = it.name + (it.price ? ' ' + owYen(it.price) : '');
             if (it.deadline) msg += '\n⏰ 予約締切 ' + owMd(it.deadline);
             else if (it.isPreorder) msg += '\n予約商品';
@@ -573,5 +611,6 @@ function owRunCheck(force) {
 
   owSave('ow_recent', recent.slice(0, OW.MAX_RECENT));
   owSave('ow_state', state);
+  if (needAlert) owAlert(); // 1回の確認につき1度だけ鳴らす（通知が何件あっても）
   return (newCount ? '新商品 ' + newCount + ' 件\n' : '') + summary.join('\n');
 }
