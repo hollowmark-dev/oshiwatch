@@ -1,9 +1,838 @@
 [
   {
-    "key": "s_1000",
-    "name": "-",
+    "key": "m_kt",
+    "name": "ハローキティ",
     "sources": {
-      "sanrio_shop": "1000"
+      "sanrio_shop": "1",
+      "munyugurumi": "KT"
+    }
+  },
+  {
+    "key": "s_1073",
+    "name": "My Bestie Forever デザインシリーズ",
+    "sources": {
+      "sanrio_shop": "1073"
+    }
+  },
+  {
+    "key": "m_ku",
+    "name": "クロミ",
+    "sources": {
+      "sanrio_shop": "12",
+      "munyugurumi": "KU"
+    }
+  },
+  {
+    "key": "m_cn",
+    "name": "シナモロール",
+    "sources": {
+      "sanrio_shop": "5",
+      "munyugurumi": "CN"
+    }
+  },
+  {
+    "key": "m_mm",
+    "name": "マイメロディ",
+    "sources": {
+      "sanrio_shop": "2",
+      "munyugurumi": "MM"
+    }
+  },
+  {
+    "key": "s_127",
+    "name": "クロミ(バク)",
+    "sources": {
+      "sanrio_shop": "127"
+    }
+  },
+  {
+    "key": "m_pn",
+    "name": "ポムポムプリン",
+    "sources": {
+      "sanrio_shop": "4",
+      "munyugurumi": "PN"
+    }
+  },
+  {
+    "key": "m_pc",
+    "name": "ポチャッコ",
+    "sources": {
+      "sanrio_shop": "9",
+      "munyugurumi": "PC"
+    }
+  },
+  {
+    "key": "s_24",
+    "name": "サンリオキャラクターズ",
+    "sources": {
+      "sanrio_shop": "24"
+    }
+  },
+  {
+    "key": "m_hg",
+    "name": "ハンギョドン",
+    "sources": {
+      "sanrio_shop": "28",
+      "munyugurumi": "HG"
+    }
+  },
+  {
+    "key": "s_1072",
+    "name": "ミスターメン リトルミス",
+    "sources": {
+      "sanrio_shop": "1072"
+    }
+  },
+  {
+    "key": "m_mp",
+    "name": "マイスウィートピアノ",
+    "sources": {
+      "sanrio_shop": "39",
+      "munyugurumi": "MP"
+    }
+  },
+  {
+    "key": "m_us",
+    "name": "ウサハナ",
+    "sources": {
+      "sanrio_shop": "41",
+      "munyugurumi": "US"
+    }
+  },
+  {
+    "key": "m_kr",
+    "name": "けろけろけろっぴ",
+    "sources": {
+      "sanrio_shop": "7",
+      "munyugurumi": "KR"
+    }
+  },
+  {
+    "key": "m_xo",
+    "name": "バッドばつ丸",
+    "sources": {
+      "sanrio_shop": "10",
+      "munyugurumi": "XO"
+    }
+  },
+  {
+    "key": "m_ts",
+    "name": "リトルツインスターズ",
+    "sources": {
+      "sanrio_shop": "3",
+      "munyugurumi": "TS"
+    }
+  },
+  {
+    "key": "s_25",
+    "name": "その他キャラクター",
+    "sources": {
+      "sanrio_shop": "25"
+    }
+  },
+  {
+    "key": "m_ap",
+    "name": "あひるのペックル",
+    "sources": {
+      "sanrio_shop": "37",
+      "munyugurumi": "AP"
+    }
+  },
+  {
+    "key": "m_tx",
+    "name": "タキシードサム",
+    "sources": {
+      "sanrio_shop": "8",
+      "munyugurumi": "TX"
+    }
+  },
+  {
+    "key": "m_cg",
+    "name": "こぎみゅん",
+    "sources": {
+      "sanrio_shop": "36",
+      "munyugurumi": "CG"
+    }
+  },
+  {
+    "key": "m_si",
+    "name": "シュガーバニーズ",
+    "sources": {
+      "sanrio_shop": "29",
+      "munyugurumi": "SI"
+    }
+  },
+  {
+    "key": "m_wi",
+    "name": "ウィッシュミーメル",
+    "sources": {
+      "sanrio_shop": "35",
+      "munyugurumi": "WI"
+    }
+  },
+  {
+    "key": "m_ma",
+    "name": "マロンクリーム",
+    "sources": {
+      "sanrio_shop": "15",
+      "munyugurumi": "MA"
+    }
+  },
+  {
+    "key": "m_ho",
+    "name": "はなまるおばけ",
+    "sources": {
+      "sanrio_shop": "1053",
+      "munyugurumi": "HO"
+    }
+  },
+  {
+    "key": "m_ck",
+    "name": "コロコロクリリン",
+    "sources": {
+      "sanrio_shop": "26",
+      "munyugurumi": "CK"
+    }
+  },
+  {
+    "key": "m_cy",
+    "name": "チャーミーキティ",
+    "sources": {
+      "sanrio_shop": "40",
+      "munyugurumi": "CY"
+    }
+  },
+  {
+    "key": "s_171",
+    "name": "マイメロディ&クロミ",
+    "sources": {
+      "sanrio_shop": "171"
+    }
+  },
+  {
+    "key": "s_1052",
+    "name": "I.CINNAMOROLL（アイシナモロール）",
+    "sources": {
+      "sanrio_shop": "1052"
+    }
+  },
+  {
+    "key": "m_gu",
+    "name": "ぐでたま",
+    "sources": {
+      "sanrio_shop": "6",
+      "munyugurumi": "GU"
+    }
+  },
+  {
+    "key": "s_168",
+    "name": "スヌーピー",
+    "sources": {
+      "sanrio_shop": "168"
+    }
+  },
+  {
+    "key": "m_bo",
+    "name": "ぼんぼんりぼん",
+    "sources": {
+      "sanrio_shop": "17",
+      "munyugurumi": "BO"
+    }
+  },
+  {
+    "key": "s_57",
+    "name": "チョコキャット",
+    "sources": {
+      "sanrio_shop": "57"
+    }
+  },
+  {
+    "key": "s_27",
+    "name": "パティ＆ジミー",
+    "sources": {
+      "sanrio_shop": "27"
+    }
+  },
+  {
+    "key": "m_dn",
+    "name": "ディアダニエル",
+    "sources": {
+      "sanrio_shop": "64",
+      "munyugurumi": "DN"
+    }
+  },
+  {
+    "key": "s_1085",
+    "name": "リトルミス サンシャイン",
+    "sources": {
+      "sanrio_shop": "1085"
+    }
+  },
+  {
+    "key": "m_ga",
+    "name": "がおぱわるぅ",
+    "sources": {
+      "sanrio_shop": "1055",
+      "munyugurumi": "GA"
+    }
+  },
+  {
+    "key": "s_100",
+    "name": "はぴだんぶい",
+    "sources": {
+      "sanrio_shop": "100"
+    }
+  },
+  {
+    "key": "s_1079",
+    "name": "ミスター ハッピー",
+    "sources": {
+      "sanrio_shop": "1079"
+    }
+  },
+  {
+    "key": "s_1078",
+    "name": "ミスター バンプ",
+    "sources": {
+      "sanrio_shop": "1078"
+    }
+  },
+  {
+    "key": "m_ta",
+    "name": "みんなのたあ坊",
+    "sources": {
+      "sanrio_shop": "11",
+      "munyugurumi": "TA"
+    }
+  },
+  {
+    "key": "s_1091",
+    "name": "リトルミス プリンセス",
+    "sources": {
+      "sanrio_shop": "1091"
+    }
+  },
+  {
+    "key": "s_1003",
+    "name": "シュガーバニーズ(くろうさ)",
+    "sources": {
+      "sanrio_shop": "1003"
+    }
+  },
+  {
+    "key": "s_1002",
+    "name": "シュガーバニーズ(しろうさ)",
+    "sources": {
+      "sanrio_shop": "1002"
+    }
+  },
+  {
+    "key": "s_1080",
+    "name": "ミスター ティックル",
+    "sources": {
+      "sanrio_shop": "1080"
+    }
+  },
+  {
+    "key": "m_ki",
+    "name": "KIRIMIちゃん.",
+    "sources": {
+      "sanrio_shop": "38",
+      "munyugurumi": "KI"
+    }
+  },
+  {
+    "key": "s_1061",
+    "name": "にゃんたじあ！",
+    "sources": {
+      "sanrio_shop": "1061"
+    }
+  },
+  {
+    "key": "s_33",
+    "name": "アイムドラえもん",
+    "sources": {
+      "sanrio_shop": "33"
+    }
+  },
+  {
+    "key": "s_44",
+    "name": "タイニーチャム",
+    "sources": {
+      "sanrio_shop": "44"
+    }
+  },
+  {
+    "key": "s_179",
+    "name": "マイメロディ&マイスウィートピアノ",
+    "sources": {
+      "sanrio_shop": "179"
+    }
+  },
+  {
+    "key": "m_sk",
+    "name": "いちごの王さま",
+    "sources": {
+      "sanrio_shop": "54",
+      "munyugurumi": "SK"
+    }
+  },
+  {
+    "key": "s_1013",
+    "name": "JOCHUM",
+    "sources": {
+      "sanrio_shop": "1013"
+    }
+  },
+  {
+    "key": "s_1081",
+    "name": "ミスター ストロング",
+    "sources": {
+      "sanrio_shop": "1081"
+    }
+  },
+  {
+    "key": "s_106",
+    "name": "リトルツインスターズ(ララ)",
+    "sources": {
+      "sanrio_shop": "106"
+    }
+  },
+  {
+    "key": "m_go",
+    "name": "ゴロピカドン",
+    "sources": {
+      "sanrio_shop": "32",
+      "munyugurumi": "GO"
+    }
+  },
+  {
+    "key": "m_ktmi",
+    "name": "ハローミミィ",
+    "sources": {
+      "sanrio_shop": "102",
+      "munyugurumi": "KTMI"
+    }
+  },
+  {
+    "key": "s_1045",
+    "name": "ぼさにまる",
+    "sources": {
+      "sanrio_shop": "1045"
+    }
+  },
+  {
+    "key": "s_1093",
+    "name": "シナモロール&こぎみゅん",
+    "sources": {
+      "sanrio_shop": "1093"
+    }
+  },
+  {
+    "key": "s_45",
+    "name": "マシュマロみたいなふわふわにゃんこ",
+    "sources": {
+      "sanrio_shop": "45"
+    }
+  },
+  {
+    "key": "s_105",
+    "name": "リトルツインスターズ(キキ)",
+    "sources": {
+      "sanrio_shop": "105"
+    }
+  },
+  {
+    "key": "s_67",
+    "name": "リトルフォレストフェロォ",
+    "sources": {
+      "sanrio_shop": "67"
+    }
+  },
+  {
+    "key": "s_1088",
+    "name": "リトルミス ギグルス",
+    "sources": {
+      "sanrio_shop": "1088"
+    }
+  },
+  {
+    "key": "m_mf",
+    "name": "まるもふびより",
+    "sources": {
+      "sanrio_shop": "16",
+      "munyugurumi": "MF"
+    }
+  },
+  {
+    "key": "m_ch",
+    "name": "チアリーチャム",
+    "sources": {
+      "sanrio_shop": "13",
+      "munyugurumi": "CH"
+    }
+  },
+  {
+    "key": "s_1034",
+    "name": "ハローキティ&ハローミミィ",
+    "sources": {
+      "sanrio_shop": "1034"
+    }
+  },
+  {
+    "key": "s_1044",
+    "name": "Eddy",
+    "sources": {
+      "sanrio_shop": "1044"
+    }
+  },
+  {
+    "key": "s_14",
+    "name": "ニャニィニュニェニョン",
+    "sources": {
+      "sanrio_shop": "14"
+    }
+  },
+  {
+    "key": "s_30",
+    "name": "おさるのもんきち",
+    "sources": {
+      "sanrio_shop": "30"
+    }
+  },
+  {
+    "key": "s_1086",
+    "name": "リトルミス チャターボックス",
+    "sources": {
+      "sanrio_shop": "1086"
+    }
+  },
+  {
+    "key": "s_1090",
+    "name": "リトルミス ハグ",
+    "sources": {
+      "sanrio_shop": "1090"
+    }
+  },
+  {
+    "key": "m_pm",
+    "name": "ぺたぺたみにりあん",
+    "sources": {
+      "sanrio_shop": "1054",
+      "munyugurumi": "PM"
+    }
+  },
+  {
+    "key": "m_py",
+    "name": "パタパタペッピー",
+    "sources": {
+      "sanrio_shop": "49",
+      "munyugurumi": "PY"
+    }
+  },
+  {
+    "key": "m_lr",
+    "name": "ルロロマニック",
+    "sources": {
+      "sanrio_shop": "42",
+      "munyugurumi": "LR"
+    }
+  },
+  {
+    "key": "s_1051",
+    "name": "ぼさにまる（蘭）",
+    "sources": {
+      "sanrio_shop": "1051"
+    }
+  },
+  {
+    "key": "s_1028",
+    "name": "シナモロール＆みるく",
+    "sources": {
+      "sanrio_shop": "1028"
+    }
+  },
+  {
+    "key": "s_65",
+    "name": "ジュエルペット",
+    "sources": {
+      "sanrio_shop": "65"
+    }
+  },
+  {
+    "key": "s_18",
+    "name": "ハミングミント",
+    "sources": {
+      "sanrio_shop": "18"
+    }
+  },
+  {
+    "key": "s_111",
+    "name": "ポムポムプリン(マフィン)",
+    "sources": {
+      "sanrio_shop": "111"
+    }
+  },
+  {
+    "key": "s_1082",
+    "name": "ミスター クール",
+    "sources": {
+      "sanrio_shop": "1082"
+    }
+  },
+  {
+    "key": "s_1077",
+    "name": "ミスター グリーディ",
+    "sources": {
+      "sanrio_shop": "1077"
+    }
+  },
+  {
+    "key": "s_1083",
+    "name": "ミスター チャターボックス",
+    "sources": {
+      "sanrio_shop": "1083"
+    }
+  },
+  {
+    "key": "s_1084",
+    "name": "リトルミス キュリアス",
+    "sources": {
+      "sanrio_shop": "1084"
+    }
+  },
+  {
+    "key": "s_1089",
+    "name": "リトルミス ビジー",
+    "sources": {
+      "sanrio_shop": "1089"
+    }
+  },
+  {
+    "key": "s_1017",
+    "name": "JOCHUM(RURU)",
+    "sources": {
+      "sanrio_shop": "1017"
+    }
+  },
+  {
+    "key": "s_1021",
+    "name": "JOCHUM(ちまた)",
+    "sources": {
+      "sanrio_shop": "1021"
+    }
+  },
+  {
+    "key": "s_1024",
+    "name": "JOCHUM(もこ)",
+    "sources": {
+      "sanrio_shop": "1024"
+    }
+  },
+  {
+    "key": "s_1015",
+    "name": "JOCHUM(チュララ)",
+    "sources": {
+      "sanrio_shop": "1015"
+    }
+  },
+  {
+    "key": "s_1020",
+    "name": "JOCHUM(ピーハイ)",
+    "sources": {
+      "sanrio_shop": "1020"
+    }
+  },
+  {
+    "key": "s_1019",
+    "name": "JOCHUM(マイクン)",
+    "sources": {
+      "sanrio_shop": "1019"
+    }
+  },
+  {
+    "key": "s_1025",
+    "name": "JOCHUM(ヤヌカミ)",
+    "sources": {
+      "sanrio_shop": "1025"
+    }
+  },
+  {
+    "key": "s_1068",
+    "name": "にゃんたじあ！（若魔影ネオン）",
+    "sources": {
+      "sanrio_shop": "1068"
+    }
+  },
+  {
+    "key": "s_1066",
+    "name": "にゃんたじあ！（若魔白ソーダ）",
+    "sources": {
+      "sanrio_shop": "1066"
+    }
+  },
+  {
+    "key": "s_1065",
+    "name": "にゃんたじあ！（若魔藤あんず）",
+    "sources": {
+      "sanrio_shop": "1065"
+    }
+  },
+  {
+    "key": "s_1070",
+    "name": "にゃんたじあ！（若魔陽エル）",
+    "sources": {
+      "sanrio_shop": "1070"
+    }
+  },
+  {
+    "key": "s_1069",
+    "name": "にゃんたじあ！（若魔雲ふわり）",
+    "sources": {
+      "sanrio_shop": "1069"
+    }
+  },
+  {
+    "key": "s_1067",
+    "name": "にゃんたじあ！（若魔麦たると）",
+    "sources": {
+      "sanrio_shop": "1067"
+    }
+  },
+  {
+    "key": "s_1050",
+    "name": "ぼさにまる（キャシー）",
+    "sources": {
+      "sanrio_shop": "1050"
+    }
+  },
+  {
+    "key": "s_59",
+    "name": "るるる学園",
+    "sources": {
+      "sanrio_shop": "59"
+    }
+  },
+  {
+    "key": "s_46",
+    "name": "アグレッシブ烈子",
+    "sources": {
+      "sanrio_shop": "46"
+    }
+  },
+  {
+    "key": "s_1049",
+    "name": "アドロ―ザトルマリィ",
+    "sources": {
+      "sanrio_shop": "1049"
+    }
+  },
+  {
+    "key": "s_143",
+    "name": "ウィッシュミーメル(アロ)",
+    "sources": {
+      "sanrio_shop": "143"
+    }
+  },
+  {
+    "key": "s_142",
+    "name": "ウィッシュミーメル(チーコ)",
+    "sources": {
+      "sanrio_shop": "142"
+    }
+  },
+  {
+    "key": "s_147",
+    "name": "ウィッシュミーメル(ニィナ)",
+    "sources": {
+      "sanrio_shop": "147"
+    }
+  },
+  {
+    "key": "s_1033",
+    "name": "クロミ&バク",
+    "sources": {
+      "sanrio_shop": "1033"
+    }
+  },
+  {
+    "key": "s_56",
+    "name": "ザ・ボードビルデュオ",
+    "sources": {
+      "sanrio_shop": "56"
+    }
+  },
+  {
+    "key": "s_1006",
+    "name": "シナモロール&ポチャッコ",
+    "sources": {
+      "sanrio_shop": "1006"
+    }
+  },
+  {
+    "key": "s_118",
+    "name": "シナモロール(みるく)",
+    "sources": {
+      "sanrio_shop": "118"
+    }
+  },
+  {
+    "key": "s_172",
+    "name": "ハローキティ&ディアダニエル",
+    "sources": {
+      "sanrio_shop": "172"
+    }
+  },
+  {
+    "key": "s_1092",
+    "name": "ミスター ブレイブ",
+    "sources": {
+      "sanrio_shop": "1092"
+    }
+  },
+  {
+    "key": "s_1087",
+    "name": "リトルミス ノーティ",
+    "sources": {
+      "sanrio_shop": "1087"
+    }
+  },
+  {
+    "key": "s_126",
+    "name": "ルロロマニック(チェリー)",
+    "sources": {
+      "sanrio_shop": "126"
+    }
+  },
+  {
+    "key": "s_125",
+    "name": "ルロロマニック(ベリー)",
+    "sources": {
+      "sanrio_shop": "125"
+    }
+  },
+  {
+    "key": "m_ds",
+    "name": "ウィアーダイナソアーズ",
+    "sources": {
+      "sanrio_shop": "81",
+      "munyugurumi": "DS"
+    }
+  },
+  {
+    "key": "m_zb",
+    "name": "ザシキブタ",
+    "sources": {
+      "sanrio_shop": "51",
+      "munyugurumi": "ZB"
+    }
+  },
+  {
+    "key": "m_mt",
+    "name": "マジカルツインコメッツ",
+    "sources": {
+      "sanrio_shop": "1100",
+      "munyugurumi": "MT"
     }
   },
   {
@@ -49,13 +878,6 @@
     }
   },
   {
-    "key": "s_1044",
-    "name": "Eddy",
-    "sources": {
-      "sanrio_shop": "1044"
-    }
-  },
-  {
     "key": "m_hare",
     "name": "HARE",
     "sources": {
@@ -70,38 +892,10 @@
     }
   },
   {
-    "key": "s_1052",
-    "name": "I.CINNAMOROLL（アイシナモロール）",
-    "sources": {
-      "sanrio_shop": "1052"
-    }
-  },
-  {
-    "key": "s_1013",
-    "name": "JOCHUM",
-    "sources": {
-      "sanrio_shop": "1013"
-    }
-  },
-  {
     "key": "s_1018",
     "name": "JOCHUM(Bira)",
     "sources": {
       "sanrio_shop": "1018"
-    }
-  },
-  {
-    "key": "s_1017",
-    "name": "JOCHUM(RURU)",
-    "sources": {
-      "sanrio_shop": "1017"
-    }
-  },
-  {
-    "key": "s_1021",
-    "name": "JOCHUM(ちまた)",
-    "sources": {
-      "sanrio_shop": "1021"
     }
   },
   {
@@ -119,41 +913,6 @@
     }
   },
   {
-    "key": "s_1024",
-    "name": "JOCHUM(もこ)",
-    "sources": {
-      "sanrio_shop": "1024"
-    }
-  },
-  {
-    "key": "s_1015",
-    "name": "JOCHUM(チュララ)",
-    "sources": {
-      "sanrio_shop": "1015"
-    }
-  },
-  {
-    "key": "s_1020",
-    "name": "JOCHUM(ピーハイ)",
-    "sources": {
-      "sanrio_shop": "1020"
-    }
-  },
-  {
-    "key": "s_1019",
-    "name": "JOCHUM(マイクン)",
-    "sources": {
-      "sanrio_shop": "1019"
-    }
-  },
-  {
-    "key": "s_1025",
-    "name": "JOCHUM(ヤヌカミ)",
-    "sources": {
-      "sanrio_shop": "1025"
-    }
-  },
-  {
     "key": "s_1023",
     "name": "JOCHUM(レイン)",
     "sources": {
@@ -161,25 +920,10 @@
     }
   },
   {
-    "key": "m_ki",
-    "name": "KIRIMIちゃん.",
-    "sources": {
-      "sanrio_shop": "38",
-      "munyugurumi": "KI"
-    }
-  },
-  {
     "key": "m_kerordinary",
     "name": "Kerordinary:)",
     "sources": {
       "munyugurumi": "Kerordinary"
-    }
-  },
-  {
-    "key": "s_1073",
-    "name": "My Bestie Forever デザインシリーズ",
-    "sources": {
-      "sanrio_shop": "1073"
     }
   },
   {
@@ -253,14 +997,6 @@
     }
   },
   {
-    "key": "m_ap",
-    "name": "あひるのペックル",
-    "sources": {
-      "sanrio_shop": "37",
-      "munyugurumi": "AP"
-    }
-  },
-  {
     "key": "s_1062",
     "name": "あひるのペックル&ハンギョドン",
     "sources": {
@@ -282,14 +1018,6 @@
     }
   },
   {
-    "key": "m_sk",
-    "name": "いちごの王さま",
-    "sources": {
-      "sanrio_shop": "54",
-      "munyugurumi": "SK"
-    }
-  },
-  {
     "key": "s_1095",
     "name": "いちご新聞50周年記念シリーズ",
     "sources": {
@@ -308,13 +1036,6 @@
     "name": "おきがるふれんず",
     "sources": {
       "sanrio_shop": "82"
-    }
-  },
-  {
-    "key": "s_30",
-    "name": "おさるのもんきち",
-    "sources": {
-      "sanrio_shop": "30"
     }
   },
   {
@@ -346,30 +1067,6 @@
     }
   },
   {
-    "key": "m_ga",
-    "name": "がおぱわるぅ",
-    "sources": {
-      "sanrio_shop": "1055",
-      "munyugurumi": "GA"
-    }
-  },
-  {
-    "key": "m_gu",
-    "name": "ぐでたま",
-    "sources": {
-      "sanrio_shop": "6",
-      "munyugurumi": "GU"
-    }
-  },
-  {
-    "key": "m_kr",
-    "name": "けろけろけろっぴ",
-    "sources": {
-      "sanrio_shop": "7",
-      "munyugurumi": "KR"
-    }
-  },
-  {
     "key": "s_1043",
     "name": "けろけろけろっぴ&あひるのペックル",
     "sources": {
@@ -381,14 +1078,6 @@
     "name": "けろけろけろっぴ&タキシードサム",
     "sources": {
       "sanrio_shop": "1064"
-    }
-  },
-  {
-    "key": "m_cg",
-    "name": "こぎみゅん",
-    "sources": {
-      "sanrio_shop": "36",
-      "munyugurumi": "CG"
     }
   },
   {
@@ -434,13 +1123,6 @@
     }
   },
   {
-    "key": "s_25",
-    "name": "その他キャラクター",
-    "sources": {
-      "sanrio_shop": "25"
-    }
-  },
-  {
     "key": "s_83",
     "name": "たらいぐまのらんどりー",
     "sources": {
@@ -483,55 +1165,6 @@
     }
   },
   {
-    "key": "s_1061",
-    "name": "にゃんたじあ！",
-    "sources": {
-      "sanrio_shop": "1061"
-    }
-  },
-  {
-    "key": "s_1068",
-    "name": "にゃんたじあ！（若魔影ネオン）",
-    "sources": {
-      "sanrio_shop": "1068"
-    }
-  },
-  {
-    "key": "s_1066",
-    "name": "にゃんたじあ！（若魔白ソーダ）",
-    "sources": {
-      "sanrio_shop": "1066"
-    }
-  },
-  {
-    "key": "s_1065",
-    "name": "にゃんたじあ！（若魔藤あんず）",
-    "sources": {
-      "sanrio_shop": "1065"
-    }
-  },
-  {
-    "key": "s_1070",
-    "name": "にゃんたじあ！（若魔陽エル）",
-    "sources": {
-      "sanrio_shop": "1070"
-    }
-  },
-  {
-    "key": "s_1069",
-    "name": "にゃんたじあ！（若魔雲ふわり）",
-    "sources": {
-      "sanrio_shop": "1069"
-    }
-  },
-  {
-    "key": "s_1067",
-    "name": "にゃんたじあ！（若魔麦たると）",
-    "sources": {
-      "sanrio_shop": "1067"
-    }
-  },
-  {
     "key": "m_nuinui",
     "name": "ぬいぬいフレンズ(Nuinui Friends)",
     "sources": {
@@ -543,21 +1176,6 @@
     "name": "ねむっこにゃーご",
     "sources": {
       "sanrio_shop": "92"
-    }
-  },
-  {
-    "key": "m_ho",
-    "name": "はなまるおばけ",
-    "sources": {
-      "sanrio_shop": "1053",
-      "munyugurumi": "HO"
-    }
-  },
-  {
-    "key": "s_100",
-    "name": "はぴだんぶい",
-    "sources": {
-      "sanrio_shop": "100"
     }
   },
   {
@@ -582,21 +1200,6 @@
     }
   },
   {
-    "key": "m_pm",
-    "name": "ぺたぺたみにりあん",
-    "sources": {
-      "sanrio_shop": "1054",
-      "munyugurumi": "PM"
-    }
-  },
-  {
-    "key": "s_1045",
-    "name": "ぼさにまる",
-    "sources": {
-      "sanrio_shop": "1045"
-    }
-  },
-  {
     "key": "s_1047",
     "name": "ぼさにまる（こたろう）",
     "sources": {
@@ -615,28 +1218,6 @@
     "name": "ぼさにまる（エリカ）",
     "sources": {
       "sanrio_shop": "1048"
-    }
-  },
-  {
-    "key": "s_1050",
-    "name": "ぼさにまる（キャシー）",
-    "sources": {
-      "sanrio_shop": "1050"
-    }
-  },
-  {
-    "key": "s_1051",
-    "name": "ぼさにまる（蘭）",
-    "sources": {
-      "sanrio_shop": "1051"
-    }
-  },
-  {
-    "key": "m_bo",
-    "name": "ぼんぼんりぼん",
-    "sources": {
-      "sanrio_shop": "17",
-      "munyugurumi": "BO"
     }
   },
   {
@@ -665,14 +1246,6 @@
     "name": "まついぬ",
     "sources": {
       "munyugurumi": "matsuinu"
-    }
-  },
-  {
-    "key": "m_mf",
-    "name": "まるもふびより",
-    "sources": {
-      "sanrio_shop": "16",
-      "munyugurumi": "MF"
     }
   },
   {
@@ -711,14 +1284,6 @@
     }
   },
   {
-    "key": "m_ta",
-    "name": "みんなのたあ坊",
-    "sources": {
-      "sanrio_shop": "11",
-      "munyugurumi": "TA"
-    }
-  },
-  {
     "key": "m_yasashisaparktown",
     "name": "やさしさパークタウン",
     "sources": {
@@ -726,75 +1291,10 @@
     }
   },
   {
-    "key": "s_59",
-    "name": "るるる学園",
-    "sources": {
-      "sanrio_shop": "59"
-    }
-  },
-  {
-    "key": "s_33",
-    "name": "アイムドラえもん",
-    "sources": {
-      "sanrio_shop": "33"
-    }
-  },
-  {
-    "key": "s_46",
-    "name": "アグレッシブ烈子",
-    "sources": {
-      "sanrio_shop": "46"
-    }
-  },
-  {
-    "key": "s_1049",
-    "name": "アドロ―ザトルマリィ",
-    "sources": {
-      "sanrio_shop": "1049"
-    }
-  },
-  {
     "key": "m_anneshirley",
     "name": "アン・シャーリー",
     "sources": {
       "munyugurumi": "anneshirley"
-    }
-  },
-  {
-    "key": "m_ds",
-    "name": "ウィアーダイナソアーズ",
-    "sources": {
-      "sanrio_shop": "81",
-      "munyugurumi": "DS"
-    }
-  },
-  {
-    "key": "m_wi",
-    "name": "ウィッシュミーメル",
-    "sources": {
-      "sanrio_shop": "35",
-      "munyugurumi": "WI"
-    }
-  },
-  {
-    "key": "s_143",
-    "name": "ウィッシュミーメル(アロ)",
-    "sources": {
-      "sanrio_shop": "143"
-    }
-  },
-  {
-    "key": "s_142",
-    "name": "ウィッシュミーメル(チーコ)",
-    "sources": {
-      "sanrio_shop": "142"
-    }
-  },
-  {
-    "key": "s_147",
-    "name": "ウィッシュミーメル(ニィナ)",
-    "sources": {
-      "sanrio_shop": "147"
     }
   },
   {
@@ -851,14 +1351,6 @@
     "name": "ウィーメリールー",
     "sources": {
       "sanrio_shop": "96"
-    }
-  },
-  {
-    "key": "m_us",
-    "name": "ウサハナ",
-    "sources": {
-      "sanrio_shop": "41",
-      "munyugurumi": "US"
     }
   },
   {
@@ -925,28 +1417,6 @@
     }
   },
   {
-    "key": "m_ku",
-    "name": "クロミ",
-    "sources": {
-      "sanrio_shop": "12",
-      "munyugurumi": "KU"
-    }
-  },
-  {
-    "key": "s_1033",
-    "name": "クロミ&バク",
-    "sources": {
-      "sanrio_shop": "1033"
-    }
-  },
-  {
-    "key": "s_127",
-    "name": "クロミ(バク)",
-    "sources": {
-      "sanrio_shop": "127"
-    }
-  },
-  {
     "key": "m_kerorogunso",
     "name": "ケロロ軍曹",
     "sources": {
@@ -975,22 +1445,6 @@
     }
   },
   {
-    "key": "m_ck",
-    "name": "コロコロクリリン",
-    "sources": {
-      "sanrio_shop": "26",
-      "munyugurumi": "CK"
-    }
-  },
-  {
-    "key": "m_go",
-    "name": "ゴロピカドン",
-    "sources": {
-      "sanrio_shop": "32",
-      "munyugurumi": "GO"
-    }
-  },
-  {
     "key": "s_151",
     "name": "ゴロピカドン(ゴロ)",
     "sources": {
@@ -1012,13 +1466,6 @@
     }
   },
   {
-    "key": "s_24",
-    "name": "サンリオキャラクターズ",
-    "sources": {
-      "sanrio_shop": "24"
-    }
-  },
-  {
     "key": "s_99",
     "name": "サンリオ男子",
     "sources": {
@@ -1033,36 +1480,6 @@
     }
   },
   {
-    "key": "m_zb",
-    "name": "ザシキブタ",
-    "sources": {
-      "sanrio_shop": "51",
-      "munyugurumi": "ZB"
-    }
-  },
-  {
-    "key": "s_56",
-    "name": "ザ・ボードビルデュオ",
-    "sources": {
-      "sanrio_shop": "56"
-    }
-  },
-  {
-    "key": "m_cn",
-    "name": "シナモロール",
-    "sources": {
-      "sanrio_shop": "5",
-      "munyugurumi": "CN"
-    }
-  },
-  {
-    "key": "s_1093",
-    "name": "シナモロール&こぎみゅん",
-    "sources": {
-      "sanrio_shop": "1093"
-    }
-  },
-  {
     "key": "s_173",
     "name": "シナモロール&コロコロクリリン",
     "sources": {
@@ -1070,24 +1487,10 @@
     }
   },
   {
-    "key": "s_1006",
-    "name": "シナモロール&ポチャッコ",
-    "sources": {
-      "sanrio_shop": "1006"
-    }
-  },
-  {
     "key": "s_1037",
     "name": "シナモロール&ポロン",
     "sources": {
       "sanrio_shop": "1037"
-    }
-  },
-  {
-    "key": "s_118",
-    "name": "シナモロール(みるく)",
-    "sources": {
-      "sanrio_shop": "118"
     }
   },
   {
@@ -1154,39 +1557,10 @@
     }
   },
   {
-    "key": "s_1028",
-    "name": "シナモロール＆みるく",
-    "sources": {
-      "sanrio_shop": "1028"
-    }
-  },
-  {
     "key": "s_72",
     "name": "シュガークリームパフ",
     "sources": {
       "sanrio_shop": "72"
-    }
-  },
-  {
-    "key": "m_si",
-    "name": "シュガーバニーズ",
-    "sources": {
-      "sanrio_shop": "29",
-      "munyugurumi": "SI"
-    }
-  },
-  {
-    "key": "s_1003",
-    "name": "シュガーバニーズ(くろうさ)",
-    "sources": {
-      "sanrio_shop": "1003"
-    }
-  },
-  {
-    "key": "s_1002",
-    "name": "シュガーバニーズ(しろうさ)",
-    "sources": {
-      "sanrio_shop": "1002"
     }
   },
   {
@@ -1218,13 +1592,6 @@
     }
   },
   {
-    "key": "s_65",
-    "name": "ジュエルペット",
-    "sources": {
-      "sanrio_shop": "65"
-    }
-  },
-  {
     "key": "s_1075",
     "name": "ジュエルペット（サフィー）",
     "sources": {
@@ -1239,13 +1606,6 @@
     }
   },
   {
-    "key": "s_168",
-    "name": "スヌーピー",
-    "sources": {
-      "sanrio_shop": "168"
-    }
-  },
-  {
     "key": "s_31",
     "name": "セブンシリードワーフ",
     "sources": {
@@ -1253,25 +1613,10 @@
     }
   },
   {
-    "key": "s_44",
-    "name": "タイニーチャム",
-    "sources": {
-      "sanrio_shop": "44"
-    }
-  },
-  {
     "key": "s_61",
     "name": "タイニーポエム",
     "sources": {
       "sanrio_shop": "61"
-    }
-  },
-  {
-    "key": "m_tx",
-    "name": "タキシードサム",
-    "sources": {
-      "sanrio_shop": "8",
-      "munyugurumi": "TX"
     }
   },
   {
@@ -1293,14 +1638,6 @@
     "name": "タキシードサム(パム)",
     "sources": {
       "sanrio_shop": "155"
-    }
-  },
-  {
-    "key": "m_ch",
-    "name": "チアリーチャム",
-    "sources": {
-      "sanrio_shop": "13",
-      "munyugurumi": "CH"
     }
   },
   {
@@ -1332,25 +1669,10 @@
     }
   },
   {
-    "key": "m_cy",
-    "name": "チャーミーキティ",
-    "sources": {
-      "sanrio_shop": "40",
-      "munyugurumi": "CY"
-    }
-  },
-  {
     "key": "s_1076",
     "name": "チャーミーキティ（ハニーキュート）",
     "sources": {
       "sanrio_shop": "1076"
-    }
-  },
-  {
-    "key": "s_57",
-    "name": "チョコキャット",
-    "sources": {
-      "sanrio_shop": "57"
     }
   },
   {
@@ -1368,14 +1690,6 @@
     }
   },
   {
-    "key": "m_dn",
-    "name": "ディアダニエル",
-    "sources": {
-      "sanrio_shop": "64",
-      "munyugurumi": "DN"
-    }
-  },
-  {
     "key": "s_71",
     "name": "ドリームテイルクーベア",
     "sources": {
@@ -1390,13 +1704,6 @@
     }
   },
   {
-    "key": "s_14",
-    "name": "ニャニィニュニェニョン",
-    "sources": {
-      "sanrio_shop": "14"
-    }
-  },
-  {
     "key": "s_93",
     "name": "ニョッキ&ペンネ",
     "sources": {
@@ -1408,21 +1715,6 @@
     "name": "ノラネコランド",
     "sources": {
       "sanrio_shop": "60"
-    }
-  },
-  {
-    "key": "s_18",
-    "name": "ハミングミント",
-    "sources": {
-      "sanrio_shop": "18"
-    }
-  },
-  {
-    "key": "m_kt",
-    "name": "ハローキティ",
-    "sources": {
-      "sanrio_shop": "1",
-      "munyugurumi": "KT"
     }
   },
   {
@@ -1447,40 +1739,10 @@
     }
   },
   {
-    "key": "s_172",
-    "name": "ハローキティ&ディアダニエル",
-    "sources": {
-      "sanrio_shop": "172"
-    }
-  },
-  {
-    "key": "s_1034",
-    "name": "ハローキティ&ハローミミィ",
-    "sources": {
-      "sanrio_shop": "1034"
-    }
-  },
-  {
     "key": "s_1005",
     "name": "ハローキティ&ポムポムプリン",
     "sources": {
       "sanrio_shop": "1005"
-    }
-  },
-  {
-    "key": "m_ktmi",
-    "name": "ハローミミィ",
-    "sources": {
-      "sanrio_shop": "102",
-      "munyugurumi": "KTMI"
-    }
-  },
-  {
-    "key": "m_hg",
-    "name": "ハンギョドン",
-    "sources": {
-      "sanrio_shop": "28",
-      "munyugurumi": "HG"
     }
   },
   {
@@ -1512,14 +1774,6 @@
     }
   },
   {
-    "key": "m_xo",
-    "name": "バッドばつ丸",
-    "sources": {
-      "sanrio_shop": "10",
-      "munyugurumi": "XO"
-    }
-  },
-  {
     "key": "s_162",
     "name": "バッドばつ丸(グッドはな丸)",
     "sources": {
@@ -1548,14 +1802,6 @@
     }
   },
   {
-    "key": "m_py",
-    "name": "パタパタペッピー",
-    "sources": {
-      "sanrio_shop": "49",
-      "munyugurumi": "PY"
-    }
-  },
-  {
     "key": "s_161",
     "name": "パティ&ジミー(ジミー)",
     "sources": {
@@ -1567,13 +1813,6 @@
     "name": "パティ&ジミー(パティ)",
     "sources": {
       "sanrio_shop": "160"
-    }
-  },
-  {
-    "key": "s_27",
-    "name": "パティ＆ジミー",
-    "sources": {
-      "sanrio_shop": "27"
     }
   },
   {
@@ -1710,14 +1949,6 @@
     }
   },
   {
-    "key": "m_pc",
-    "name": "ポチャッコ",
-    "sources": {
-      "sanrio_shop": "9",
-      "munyugurumi": "PC"
-    }
-  },
-  {
     "key": "s_1063",
     "name": "ポチャッコ&バッドばつ丸",
     "sources": {
@@ -1729,14 +1960,6 @@
     "name": "ポチャッコ(ピーちゃんズ)",
     "sources": {
       "sanrio_shop": "177"
-    }
-  },
-  {
-    "key": "m_pn",
-    "name": "ポムポムプリン",
-    "sources": {
-      "sanrio_shop": "4",
-      "munyugurumi": "PN"
     }
   },
   {
@@ -1817,13 +2040,6 @@
     }
   },
   {
-    "key": "s_111",
-    "name": "ポムポムプリン(マフィン)",
-    "sources": {
-      "sanrio_shop": "111"
-    }
-  },
-  {
     "key": "s_116",
     "name": "ポムポムプリン(ミント)",
     "sources": {
@@ -1831,40 +2047,10 @@
     }
   },
   {
-    "key": "m_mp",
-    "name": "マイスウィートピアノ",
-    "sources": {
-      "sanrio_shop": "39",
-      "munyugurumi": "MP"
-    }
-  },
-  {
     "key": "s_149",
     "name": "マイマイ",
     "sources": {
       "sanrio_shop": "149"
-    }
-  },
-  {
-    "key": "m_mm",
-    "name": "マイメロディ",
-    "sources": {
-      "sanrio_shop": "2",
-      "munyugurumi": "MM"
-    }
-  },
-  {
-    "key": "s_171",
-    "name": "マイメロディ&クロミ",
-    "sources": {
-      "sanrio_shop": "171"
-    }
-  },
-  {
-    "key": "s_179",
-    "name": "マイメロディ&マイスウィートピアノ",
-    "sources": {
-      "sanrio_shop": "179"
     }
   },
   {
@@ -1882,96 +2068,10 @@
     }
   },
   {
-    "key": "s_45",
-    "name": "マシュマロみたいなふわふわにゃんこ",
-    "sources": {
-      "sanrio_shop": "45"
-    }
-  },
-  {
-    "key": "m_mt",
-    "name": "マジカルツインコメッツ",
-    "sources": {
-      "sanrio_shop": "1100",
-      "munyugurumi": "MT"
-    }
-  },
-  {
-    "key": "m_ma",
-    "name": "マロンクリーム",
-    "sources": {
-      "sanrio_shop": "15",
-      "munyugurumi": "MA"
-    }
-  },
-  {
-    "key": "s_1082",
-    "name": "ミスター クール",
-    "sources": {
-      "sanrio_shop": "1082"
-    }
-  },
-  {
-    "key": "s_1077",
-    "name": "ミスター グリーディ",
-    "sources": {
-      "sanrio_shop": "1077"
-    }
-  },
-  {
-    "key": "s_1081",
-    "name": "ミスター ストロング",
-    "sources": {
-      "sanrio_shop": "1081"
-    }
-  },
-  {
-    "key": "s_1083",
-    "name": "ミスター チャターボックス",
-    "sources": {
-      "sanrio_shop": "1083"
-    }
-  },
-  {
-    "key": "s_1080",
-    "name": "ミスター ティックル",
-    "sources": {
-      "sanrio_shop": "1080"
-    }
-  },
-  {
-    "key": "s_1079",
-    "name": "ミスター ハッピー",
-    "sources": {
-      "sanrio_shop": "1079"
-    }
-  },
-  {
-    "key": "s_1078",
-    "name": "ミスター バンプ",
-    "sources": {
-      "sanrio_shop": "1078"
-    }
-  },
-  {
-    "key": "s_1092",
-    "name": "ミスター ブレイブ",
-    "sources": {
-      "sanrio_shop": "1092"
-    }
-  },
-  {
     "key": "s_75",
     "name": "ミスターベアーズドリーム",
     "sources": {
       "sanrio_shop": "75"
-    }
-  },
-  {
-    "key": "s_1072",
-    "name": "ミスターメン リトルミス",
-    "sources": {
-      "sanrio_shop": "1072"
     }
   },
   {
@@ -2066,91 +2166,6 @@
     }
   },
   {
-    "key": "m_ts",
-    "name": "リトルツインスターズ",
-    "sources": {
-      "sanrio_shop": "3",
-      "munyugurumi": "TS"
-    }
-  },
-  {
-    "key": "s_105",
-    "name": "リトルツインスターズ(キキ)",
-    "sources": {
-      "sanrio_shop": "105"
-    }
-  },
-  {
-    "key": "s_106",
-    "name": "リトルツインスターズ(ララ)",
-    "sources": {
-      "sanrio_shop": "106"
-    }
-  },
-  {
-    "key": "s_67",
-    "name": "リトルフォレストフェロォ",
-    "sources": {
-      "sanrio_shop": "67"
-    }
-  },
-  {
-    "key": "s_1084",
-    "name": "リトルミス キュリアス",
-    "sources": {
-      "sanrio_shop": "1084"
-    }
-  },
-  {
-    "key": "s_1088",
-    "name": "リトルミス ギグルス",
-    "sources": {
-      "sanrio_shop": "1088"
-    }
-  },
-  {
-    "key": "s_1085",
-    "name": "リトルミス サンシャイン",
-    "sources": {
-      "sanrio_shop": "1085"
-    }
-  },
-  {
-    "key": "s_1086",
-    "name": "リトルミス チャターボックス",
-    "sources": {
-      "sanrio_shop": "1086"
-    }
-  },
-  {
-    "key": "s_1087",
-    "name": "リトルミス ノーティ",
-    "sources": {
-      "sanrio_shop": "1087"
-    }
-  },
-  {
-    "key": "s_1090",
-    "name": "リトルミス ハグ",
-    "sources": {
-      "sanrio_shop": "1090"
-    }
-  },
-  {
-    "key": "s_1089",
-    "name": "リトルミス ビジー",
-    "sources": {
-      "sanrio_shop": "1089"
-    }
-  },
-  {
-    "key": "s_1091",
-    "name": "リトルミス プリンセス",
-    "sources": {
-      "sanrio_shop": "1091"
-    }
-  },
-  {
     "key": "s_74",
     "name": "リトルラヴィン",
     "sources": {
@@ -2162,28 +2177,6 @@
     "name": "リルリルフェアリル",
     "sources": {
       "sanrio_shop": "20"
-    }
-  },
-  {
-    "key": "m_lr",
-    "name": "ルロロマニック",
-    "sources": {
-      "sanrio_shop": "42",
-      "munyugurumi": "LR"
-    }
-  },
-  {
-    "key": "s_126",
-    "name": "ルロロマニック(チェリー)",
-    "sources": {
-      "sanrio_shop": "126"
-    }
-  },
-  {
-    "key": "s_125",
-    "name": "ルロロマニック(ベリー)",
-    "sources": {
-      "sanrio_shop": "125"
     }
   },
   {

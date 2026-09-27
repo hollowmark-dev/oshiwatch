@@ -74,18 +74,28 @@ def merge(sanrio, munyu):
     by_norm = {}
     for sid, info in sanrio.items():
         name = html.unescape(info["name"])  # 題名には「&amp;」のような記号が混ざる
-        by_norm.setdefault(norm(name), {"name": name, "sources": {}})["sources"]["sanrio_shop"] = sid
+        if not norm(name):
+            continue  # 「-」のような中身の無いカテゴリ
+        entry = by_norm.setdefault(norm(name), {"name": name, "sources": {}, "items": 0})
+        entry["sources"]["sanrio_shop"] = sid
+        entry["items"] = max(entry["items"], info.get("total", 0))
     for code, raw_name in munyu.items():
         name = html.unescape(raw_name)
-        entry = by_norm.setdefault(norm(name), {"name": name, "sources": {}})
+        if not norm(name):
+            continue
+        entry = by_norm.setdefault(norm(name), {"name": name, "sources": {}, "items": 0})
         entry["sources"]["munyugurumi"] = code
 
     characters = []
     for entry in by_norm.values():
         src = entry["sources"]
         key = ("m_" + src["munyugurumi"].lower()) if "munyugurumi" in src else ("s_" + src["sanrio_shop"])
-        characters.append({"key": key, "name": entry["name"], "sources": src})
-    characters.sort(key=lambda c: c["name"])
+        characters.append({"key": key, "name": entry["name"], "sources": src, "_items": entry["items"]})
+    # 選ぶ画面での並び順: サンリオ公式での商品数が多い順（人気の目安）→ 両サイト対応 → 名前順。
+    # 多くの人の推しが上のほうに来るようにする。
+    characters.sort(key=lambda c: (-c["_items"], -len(c["sources"]), c["name"]))
+    for c in characters:
+        del c["_items"]
     return characters
 
 
