@@ -399,6 +399,22 @@ function owArmAutoCheck() {
   }
 }
 
+// 自動チェックが長く動いていなければ、その原因と直し方を返す（問題なければ null）。
+// 予約された実行は、HTTP Shortcuts が「他のアプリの上に重ねて表示」を許可されていないと
+// Android にブロックされる（アラームは届くのに何も起きない。2026-09-27 エミュレーターで確認）。
+function owAutoCheckWarning(state) {
+  // 導入直後は、まだ自動で起動されていないのが正常。初回登録から1日は警告しない。
+  if (!state.first_setup_at || Date.now() - state.first_setup_at < 26 * 3600 * 1000) return null;
+  const last = state.last_auto_at;
+  if (last && Date.now() - last < 26 * 3600 * 1000) return null;
+  return (
+    '⚠️ 自動チェックが' + (last ? ' ' + owYmd(last) + ' ' + owHm(last) + ' から' : 'まだ一度も') + '動いていません。\n' +
+    'スマホの設定で、HTTP Shortcuts に「他のアプリの上に重ねて表示」を許可してください。\n' +
+    '（設定 → アプリ → HTTP Shortcuts → 他のアプリの上に重ねて表示 → 許可）\n' +
+    'あわせて、バッテリーの設定を「制限なし」にしてください。'
+  );
+}
+
 // ---------- 通知 ----------
 // スクリプトの通知は HTTP Shortcuts の「ショートカット実行」チャンネル（重要度: 低＝音もバイブも無し）に入る。
 // このチャンネルは6時間ごとの実行中表示にも使われるので、購入者に音をオンにしてもらうと毎回鳴ってしまう。
@@ -536,6 +552,7 @@ function owRunCheck(force) {
           t.seen[it.id] = today;
         });
         t.baseline = true;
+        if (!state.first_setup_at) state.first_setup_at = now;
         summary.push('📝 ' + label + ': 監視を開始（いまある ' + res.items.length + ' 件を登録）');
       } else {
         checkedEstablished = true;

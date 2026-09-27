@@ -8,8 +8,10 @@ try {
 }
 const state = owLoadState();
 owArmAutoCheck(); // 確認は済んでいるので、自動チェックは予約を作り直してすぐ終わる
+const warning = owAutoCheckWarning(state);
 showDialog(
-  (result || '結果なし').replace(/\n/g, '<br>') +
+  (warning ? '<b>' + warning.replace(/\n/g, '<br>') + '</b><br><br>' : '') +
+    (result || '結果なし').replace(/\n/g, '<br>') +
     '<br><br><small>最終確認: ' + (state.last_run_at ? owYmd(state.last_run_at) + ' ' + owHm(state.last_run_at) : '—') + '</small>',
   '今すぐチェック',
 );

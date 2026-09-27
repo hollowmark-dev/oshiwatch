@@ -22,7 +22,13 @@ function owStatusText() {
   const state = owLoadState();
   const selected = owLoadSelected();
   const lines = [];
+  const warning = owAutoCheckWarning(state);
+  if (warning) {
+    lines.push(warning);
+    lines.push('');
+  }
   lines.push('最終確認: ' + (state.last_run_at ? owYmd(state.last_run_at) + ' ' + owHm(state.last_run_at) : 'まだ一度も確認していません'));
+  lines.push('自動チェックが最後に動いた時刻: ' + (state.last_auto_at ? owYmd(state.last_auto_at) + ' ' + owHm(state.last_auto_at) : '—'));
   lines.push('最後に全部成功した日: ' + (state.last_success_date || '—'));
   lines.push('');
   lines.push('通知するキャラ: ' + (selected.length ? selected.map((c) => c.name).join('、') : '未選択'));
@@ -36,7 +42,8 @@ function owStatusText() {
 
 owArmAutoCheck(); // 開くたびに自動実行の予約を作り直す（予約が消えていても、ここで直る）
 const recent = owLoadRecent();
-const options = { status: '📋 動いているか確認する' };
+const autoWarning = owAutoCheckWarning(owLoadState());
+const options = { status: autoWarning ? '⚠️ 自動チェックが止まっています（タップで直し方）' : '📋 動いているか確認する' };
 recent.slice(0, 40).forEach((r, i) => {
   options[String(i)] = owMd(r.found) + ' ' + r.char + '｜' + r.name.slice(0, 40) + (r.deadline ? ' ⏰' : '');
 });
