@@ -55,7 +55,9 @@ def crawl_sanrio():
 
 
 def crawl_munyu():
-    html = get("https://munyugurumi.jp/itemlist?new=1&character=KR")
+    # キャラで絞り込んだページから取ると、選択中のキャラだけリンクの形が変わって漏れる（けろっぴで発生）。
+    # 絞り込み無しのページから取る。
+    html = get("https://munyugurumi.jp/itemlist?new=1")
     pairs = {}
     for code, name in re.findall(r'href="/itemlist\?new=1&(?:amp;)?character=([A-Za-z0-9]+)">([^<]+)', html):
         pairs.setdefault(code, name.strip())
@@ -64,7 +66,8 @@ def crawl_munyu():
 
 def norm(name):
     s = unicodedata.normalize("NFKC", name)
-    return re.sub(r"[\s・･.．\-ー]", "", s).lower()
+    # 表記ゆれ（空白・中黒・感嘆符など）を無視して照合する（例: ウィアーダイナソアーズ！）
+    return re.sub(r"[\s・･.．\-ー!！?？]", "", s).lower()
 
 
 def merge(sanrio, munyu):
@@ -99,6 +102,10 @@ def main():
         (OUT / "raw_sanrio.json").write_text(json.dumps(sanrio, ensure_ascii=False, indent=2), encoding="utf-8")
         print(f"  {len(sanrio)} ids", flush=True)
     else:
+        if "--refresh-munyu" in sys.argv:
+            munyu = crawl_munyu()
+            (OUT / "raw_munyu.json").write_text(json.dumps(munyu, ensure_ascii=False, indent=2), encoding="utf-8")
+            print(f"munyugurumi: {len(munyu)} codes", flush=True)
         munyu = json.loads((OUT / "raw_munyu.json").read_text(encoding="utf-8"))
         sanrio = json.loads((OUT / "raw_sanrio.json").read_text(encoding="utf-8"))
 

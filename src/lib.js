@@ -208,6 +208,10 @@ function owHasClass(node, cls) {
   const c = (node.attributes && node.attributes['class']) || '';
   return (' ' + c + ' ').indexOf(' ' + cls + ' ') >= 0;
 }
+// ¥2,530 のように3桁区切りで出す（QuickJS の toLocaleString は区切りを付けないため自前で）
+function owYen(n) {
+  return n == null ? '' : '¥' + String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+}
 function owPrice(text) {
   const m = String(text || '').replace(/,/g, '').match(/(\d+)\s*円/);
   return m ? parseInt(m[1], 10) : null;
@@ -516,7 +520,7 @@ function owRunCheck(force) {
             }
             t.seen[it.id] = today;
             newCount++;
-            let msg = it.name + (it.price ? ' ¥' + it.price.toLocaleString() : '');
+            let msg = it.name + (it.price ? ' ' + owYen(it.price) : '');
             if (it.deadline) msg += '\n⏰ 予約締切 ' + owMd(it.deadline);
             else if (it.isPreorder) msg += '\n予約商品';
             showNotification('🎀 新商品: ' + ch.name, msg + '\nタップして「新商品を見る」から開けます');

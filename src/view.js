@@ -10,7 +10,7 @@ function owAddToCalendar(item, dateYmd, kind) {
     dataUri: 'content://com.android.calendar/events',
     extras: [
       { name: 'title', type: 'string', value: '【' + kind + '】' + item.name.replace(/【[^】]*】/g, '').trim() },
-      { name: 'description', type: 'string', value: item.name + '\n' + (item.price ? '¥' + item.price.toLocaleString() + '\n' : '') + (item.url || '') },
+      { name: 'description', type: 'string', value: item.name + '\n' + (item.price ? owYen(item.price) + '\n' : '') + (item.url || '') },
       { name: 'beginTime', type: 'long', value: begin },
       { name: 'endTime', type: 'long', value: begin + 86400000 },
       { name: 'allDay', type: 'boolean', value: true },

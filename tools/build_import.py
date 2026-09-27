@@ -142,7 +142,19 @@ def build_update():
     return document(title=CATEGORY, category_name=CATEGORY, shortcuts=app_shortcuts(), variables=[])
 
 
+def build_debug():
+    """開発用（配布しない）。既知の商品を忘れさせ、新商品の通知の流れを試すためのもの。"""
+    code = (ROOT / "tools" / "debug_forget.js").read_text(encoding="utf-8")
+    return document(
+        title="開発用",
+        category_name="開発用",
+        shortcuts=[scripting_shortcut("既知の商品を忘れる（開発用）", code, icon="flat_color_rocket")],
+        variables=[],
+    )
+
+
 TARGETS = {"probe": build_probe, "install": build_install, "update": build_update}
+DEV_TARGETS = {"debug": build_debug}  # dist/ には置かない
 
 
 def main():
@@ -152,10 +164,10 @@ def main():
 
 
 def write_one(name):
-    doc = TARGETS[name]()
+    doc = (TARGETS.get(name) or DEV_TARGETS[name])()
     text = json.dumps(doc, ensure_ascii=False, indent=2)
 
-    out_dir = ROOT / "dist"
+    out_dir = ROOT / ("dist" if name in TARGETS else "dev")
     out_dir.mkdir(parents=True, exist_ok=True)
 
     # 確認用の素のJSON
